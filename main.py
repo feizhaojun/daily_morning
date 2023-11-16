@@ -33,15 +33,15 @@ if template_id is None:
 
 # weather 直接返回对象，在使用的地方用字段进行调用。
 def get_weather():
-  if city is None:
-    print('请设置城市')
-    return None
-  url = "http://autodev.openspeech.cn/csp/api/v2.1/weather?openId=aiuicus&clientType=android&sign=android&city=" + city
-  res = requests.get(url).json()
-  if res is None:
-    return None
-  weather = res['data']['list'][0]
-  return weather
+  # if city is None:
+  #   print('请设置城市')
+  #   return None
+  # url = "http://autodev.openspeech.cn/csp/api/v2.1/weather?openId=aiuicus&clientType=android&sign=android&city=" + city
+  # res = requests.get(url).json()
+  # if res is None:
+  #   return None
+  # weather = res['data']['list'][0]
+  return '未获取'
 
 # 获取当前日期为星期几
 def get_week_day():
